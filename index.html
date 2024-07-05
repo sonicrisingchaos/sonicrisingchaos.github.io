@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Sonic Rising Chaos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,7 +14,7 @@
         }
         header {
             padding: 50px;
-            background-color: #4CAF50;
+            background-color: hwb(224 0% 17%);
             color: white;
         }
         .logo {
@@ -26,14 +26,29 @@
             font-size: 18px;
             color: #333;
         }
+        .slider-container {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="Sonic_Rising_Chaos_Game_Logo_2024.png" alt="Logo" class="logo">
+        <img id="logo" src="Sonic_Rising_Chaos_Game_Logo_2024.png" alt="Logo" class="logo">
         <div class="description">
-            <p>Bienvenidos a nuestra página web. Aquí encontrarás toda la información que necesitas sobre nuestros servicios y productos.</p>
+            <p>Sonic Rising Chaos is a fangame made in Roblox powered by the "Digital Swirl Engine" that takes mechanics and is based on games like SA1, SA2 and Advance 2.</p>
+        </div>
+        <div class="slider-container">
+            <input type="range" id="sizeSlider" min="50" max="500" value="200">
+            <label for="sizeSlider">Tamaño del logo</label>
         </div>
     </header>
+    <script>
+        const slider = document.getElementById('sizeSlider');
+        const logo = document.getElementById('logo');
+
+        slider.addEventListener('input', function() {
+            logo.style.width = slider.value + 'px';
+        });
+    </script>
 </body>
 </html>
