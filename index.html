@@ -1,88 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonic Rising Chaos</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <style>
-        /* Estilos para el body */
-        body {
-            font-family: Arial, sans-serif; /* Fuente Arial para todo el texto */
-            background-image: url('Background.png'); /* Imagen de fondo */
-            background-size: cover; /* Tamaño de la imagen de fondo */
-            background-position: center; /* Posición de la imagen de fondo */
-            background-repeat: no-repeat; /* No repetir la imagen de fondo */
-            margin: 0; /* Margen exterior */
-            padding: 0; /* Espacio interior */
-            height: 100vh; /* Alto del body para que la imagen de fondo se muestre completa */
-        }
-        /* Estilos para el header */
-        header {
-            background-color: rgba(0, 0, 255, 0.5); /* Azul medio transparente */
-            padding: 20px; /* Espacio interior del header */
-            text-align: center; /* Texto centrado */
-            font-family: Arial, sans-serif; /* Fuente Arial */
-        }
-        /* Estilos para el logo */
-       .logo {
-            width: 40%; /* Ancho del logo (40% del ancho de la pantalla) */
-            height: auto; /* Alto del logo (se ajusta automáticamente) */
-            margin: 20px auto; /* Margen superior e inferior de 20px y centrado horizontalmente */
-        }
-        /* Estilos para la descripción */
-       .descripcion {
-            font-size: 24px; /* Tamaño de fuente */
-            color: #FFFFFF; /* Color del texto: blanco */
-            margin-bottom: 20px; /* Margen inferior de 20px */
-        }
-        /* Estilos para la sección de créditos */
-       .creditos {
-            background-color: #f7f7f7; /* Fondo claro */
-            padding: 20px; /* Espacio interior de la sección de créditos */
-            text-align: center; /* Texto centrado */
-        }
-       .credito {
-            margin-bottom: 10px; /* Margen inferior entre cada crédito */
-        }
-       .credito img {
-            width: 20px; /* Ancho del icono */
-            height: 20px; /* Alto del icono */
-            margin-right: 10px; /* Margen derecho del icono */
-            border-radius: 50%; /* Redondear el icono */
-        }
+      /* Estilos para el body */
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url('Background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+      }
+
+      /* Estilos para el header */
+      header {
+        background-color: rgba(0, 0, 255, 0.5);
+        padding: 20px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Estilos para el logo */
+      .logo {
+        width: 40%;
+        height: auto;
+        margin: 20px auto;
+      }
+
+      /* Estilos para la descripción */
+      .descripcion {
+        font-size: 24px;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+      }
+
+      /* Estilos para la sección de créditos */
+      .creditos {
+        background-color: #f7f7f7;
+        padding: 40px;
+        text-align: center;
+      }
+
+      .credito {
+        margin-bottom: 20px;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .credito:last-child {
+        border-bottom: none;
+      }
+
+      .credito img {
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        border-radius: 50%;
+      }
+
+      /* Nuevo estilo para hacer que los nombres sean más grandes */
+      .credito span {
+        font-size: 30px;
+        font-weight: bold;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header -->
     <header>
-        <!-- Logo -->
-        <img src="Sonic_Rising_Chaos_Game_Logo_2024.png" alt="Logo de Sonic Rising Chaos" class="logo">
-        
-        <!-- Descripción -->
-        <p class="descripcion">Sonic Rising Chaos is a fangame made in Roblox powered by the "Digital Swirl Engine" that takes mechanics and is based on games like SA1, SA2 and Advance 2.</p>
+      <!-- Logo -->
+      <img src="Sonic_Rising_Chaos_Game_Logo_2024.png" alt="Logo de Sonic Rising Chaos" class="logo">
+      <!-- Descripción -->
+      <p class="descripcion">Sonic Rising Chaos is a fangame made in Roblox powered by the "Digital Swirl Engine" that takes mechanics and is based on games like SA1, SA2 and Advance 2.</p>
     </header>
-    
     <!-- Sección de créditos -->
     <section class="creditos">
-        <h2>Créditos del equipo</h2>
-        <div class="credito">
-            <img src="blaze-icon.png" alt="Icono de Blaze">
-            Blaze - Owner, Graphic designer, Scripter. He started everything.
-        </div>
-        <div class="credito">
-            <img src="Virtual.png" alt="Icono de DEVirtual">
-            DEVirtual - Co-Owner, Scripter, UI work. He is the best scripter.
-        </div>
-        <div class="credito">
-            <img src="GhostMaker12.png" alt="Icono de GhostMaker12">
-            GhostMaker12 - Developer, Builder, 3DModeler/Animator. He is the best developer.
-        </div>
+      <h2>About Us</h2>
+      <div class="credito">
+        <img src="Blaze.png" alt="Icono de Blaze"> <span>Blaze</span>
+        Owner, Graphic designer, Scripter. He started everything.
+      </div>
+      <div class="credito">
+        <img src="Virtual.png" alt="Icono de Virtual"> <span>DEVirtual</span>
+        Co-Owner, Scripter, UI work. He is the best scripter.
+      </div>
+      <div class="credito">
+        <img src="GhostMaker12.png" alt="Icono de GhostMaker12"> <span>GhostMaker12</span>
+        Developer, Builder, 3DModeler/Animator. He is the best developer.
+      </div>
     </section>
-    
-    <!-- Contenido principal -->
-    <main>
-        <!-- Aquí va el contenido principal de la página -->
-    </main>
-</body>
+  </body>
 </html>
