@@ -1,61 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonic Rising Chaos</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
+            text-align: center;
             margin: 0;
             padding: 0;
-            background-image: url('background.jpg'); /* Cambia 'background.jpg' por tu imagen de fondo */
+            background: url('Background.png') no-repeat center center fixed;
             background-size: cover;
-            background-position: center;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            background-color: #f4f4f4;
         }
-        .header {
-            background-color: rgba(0, 0, 255, 0.5); /* Fondo azul medio transparente */
-            padding: 20px;
-            text-align: center;
+        header {
+            padding: 50px;
+            background-color: #1234cf;
             color: white;
-            width: 95%; /* Ancho del encabezado */
-            max-width: 1000px; /* Ancho máximo para contenido */
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            margin: auto; /* Centrado vertical */
-            z-index: 1000; /* Asegura que esté por encima del resto del contenido */
-            box-sizing: border-box; /* Incluir padding en el ancho */
+            height: 100px;
         }
         .logo {
-            max-width: 100%;
+            width: 1000px;
             height: auto;
-            max-height: 250px; /* Ajuste máximo para el logo */
         }
         .description {
+            margin-top: 20px;
             font-size: 18px;
-            line-height: 1.6;
-            max-width: 100%;
-            margin: 20px auto; /* Centrado horizontal */
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            color: white;
-            position: relative;
-            z-index: 1001; /* Asegura que esté por encima del encabezado */
+            color: #333;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="Sonic_Rising_Chaos_Game_Logo_2024.png" alt="Sonic Rising Chaos Logo" class="logo">
+    <header>
+        <img src="Sonic_Rising_Chaos_Game_Logo_2024.png" alt="Logo" class="logo">
         <div class="description">
             <p>Sonic Rising Chaos is a fangame made in Roblox powered by the "Digital Swirl Engine" that takes mechanics and is based on games like SA1, SA2 and Advance 2.</p>
         </div>
-    </div>
+    </header>
 </body>
 </html>
