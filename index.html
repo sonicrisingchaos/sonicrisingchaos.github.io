@@ -27,55 +27,62 @@
       }
 
       /* Estilos para el logo */
-     .logo {
+      .logo {
         width: 40%;
         height: auto;
         margin: 20px auto;
       }
 
       /* Estilos para la descripción */
-     .descripcion {
+      .descripcion {
         font-size: 24px;
         color: #FFFFFF;
         margin-bottom: 20px;
       }
 
       /* Estilos para la sección de créditos */
-     .creditos {
+      .creditos {
         background-color: #f7f7f7;
         padding: 40px;
         text-align: center;
       }
 
-     .credito {
+      .credito {
         margin-bottom: 20px;
         font-size: 24px;
-        display: flex;
-        align-items: center;
         padding: 10px;
         border-bottom: 1px solid #ccc;
+        display: flex;
+        /* Added flexbox layout */
+        align-items: center;
+        /* Vertically center the icon and text */
       }
 
-     .credito:last-child {
+      .credito:last-child {
         border-bottom: none;
       }
 
-     .credito img {
-        width: 40px;
-        height: 40px;
-        margin-right: 20px;
+      .credito img {
+        width: 80px;
+        /* Increased icon size */
+        height: 80px;
+        /* Increased icon size */
+        margin-right: 10px;
         border-radius: 50%;
       }
 
-      /* Nuevo estilo para hacer que los nombres sean más grandes */
-     .credito.name {
+      .credito .info {
+        flex: 1;
+        /* Take up the remaining space */
+      }
+
+      .credito .name {
         font-size: 36px;
         font-weight: bold;
         margin-bottom: 10px;
-        display: block;
       }
 
-     .credito.role {
+      .credito .role {
         font-size: 24px;
         color: #666;
       }
@@ -94,18 +101,24 @@
       <h2>About Us</h2>
       <div class="credito">
         <img src="Blaze.png" alt="Icono de Blaze">
-        <h3 class="name">Blaze</h3>
-        <p class="role">Owner, Graphic designer, Scripter. He started everything.</p>
+        <div class="info">
+          <h3 class="name">Blaze</h3>
+          <p class="role">Owner, Graphic designer, Scripter. He started everything.</p>
+        </div>
       </div>
       <div class="credito">
         <img src="Virtual.png" alt="Icono de Virtual">
-        <h3 class="name">DEVirtual</h3>
-        <p class="role">Co-Owner, Scripter, UI work. He is the best scripter.</p>
+        <div class="info">
+          <h3 class="name">DEVirtual</h3>
+          <p class="role">Co-Owner, Scripter, UI work. He is the best scripter.</p>
+        </div>
       </div>
       <div class="credito">
         <img src="GhostMaker12.png" alt="Icono de GhostMaker12">
-        <h3 class="name">GhostMaker12</h3>
-        <p class="role">Developer, Builder, 3DModeler/Animator. He is the best developer.</p>
+        <div class="info">
+          <h3 class="name">GhostMaker12</h3>
+          <p class="role">Developer, Builder, 3DModeler/Animator. He is the best developer.</p>
+        </div>
       </div>
     </section>
   </body>
