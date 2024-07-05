@@ -17,21 +17,21 @@
             flex-direction: column; /* Asegura que el contenido se alinee en columna */
         }
         header {
-            padding: 50px;
+            padding: 20px; /* Reducido el padding para hacer el header más delgado */
             background-color: rgba(18, 52, 207, 0.8); /* Fondo semitransparente */
             color: white;
-            flex: 1; /* Hace que el header ocupe todo el espacio disponible */
+            flex: 0 0 auto; /* Hace que el header no crezca, manteniendo su tamaño */
             display: flex;
-            flex-direction: column;
-            justify-content: center; /* Centra el contenido verticalmente */
+            justify-content: space-between; /* Alinea elementos en el header */
+            align-items: center; /* Centra verticalmente */
         }
         .logo {
             width: 1000px;
             height: auto;
-            margin: auto; /* Centra horizontalmente el logo */
+            margin-left: 20px; /* Ajusta el margen izquierdo del logo */
         }
         .description {
-            margin-top: 20px;
+            margin-right: 20px; /* Ajusta el margen derecho de la descripción */
             font-size: 18px;
             color: white;
         }
