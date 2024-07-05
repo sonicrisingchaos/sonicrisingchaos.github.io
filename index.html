@@ -1,42 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonic Rising Chaos</title>
     <style>
         body {
+            background-image: url('Background.png');
+            background-size: cover;
+            background-position: center;
             font-family: Arial, sans-serif;
             text-align: center;
+            color: white;
             margin: 0;
             padding: 0;
-            background: url('Background.png') no-repeat center center fixed;
-            background-size: cover;
-            background-color: #f4f4f4;
         }
         header {
-            padding: 50px;
-            background-color: #1234cf;
-            color: white;
-            height: 100px;
+            background-color: #007bff; /* Azul según el estándar de Bootstrap */
+            padding: 10px 0;
         }
-        .logo {
-            width: 1000px;
+        .container {
+            max-width: 800px;
+            margin: 100px auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        img.logo {
+            max-width: 100%;
             height: auto;
-        }
-        .description {
-            margin-top: 20px;
-            font-size: 18px;
-            color: #333;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="Sonic_Rising_Chaos_Game_Logo_2024.png" alt="Logo" class="logo">
-        <div class="description">
-            <p>Sonic Rising Chaos is a fangame made in Roblox powered by the "Digital Swirl Engine" that takes mechanics and is based on games like SA1, SA2 and Advance 2.</p>
-        </div>
+        <h1>Sonic Rising Chaos</h1>
     </header>
+    <div class="container">
+        <img class="logo" src="Sonic_Rising_Chaos_Game_Logo_2024.png" alt="Sonic Rising Chaos Logo">
+        <p>Sonic Rising Chaos is a fangame made in Roblox powered by the "Digital Swirl Engine" that takes mechanics and is based on games like SA1, SA2 and Advance 2.</p>
+    </div>
 </body>
 </html>
