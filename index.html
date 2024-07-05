@@ -12,31 +12,35 @@
             padding: 0;
             background: url('Background.png') no-repeat center center fixed;
             background-size: cover;
-            background-color: #f4f4f4;
+            height: 100vh; /* Establece la altura del cuerpo al 100% del viewport */
+            display: flex;
+            flex-direction: column; /* Asegura que el contenido se alinee en columna */
+            justify-content: center; /* Centra verticalmente todo el contenido */
         }
         header {
-            padding: 50px;
-            background-color: #1234cf;
+            flex: 0 0 auto; /* Hace que el header no crezca, manteniendo su tamaño */
+            background-color: rgba(18, 52, 207, 0.8); /* Fondo semitransparente */
             color: white;
-            height: 100px;
+            padding: 20px;
         }
         .logo {
             width: 1000px;
             height: auto;
+            margin: auto; /* Centra el logo horizontalmente */
         }
         .description {
             margin-top: 20px;
             font-size: 18px;
-            color: #333;
+            color: white;
         }
     </style>
 </head>
 <body>
     <header>
         <img src="Sonic_Rising_Chaos_Game_Logo_2024.png" alt="Logo" class="logo">
-        <div class="description">
-            <p>Sonic Rising Chaos is a fangame made in Roblox powered by the "Digital Swirl Engine" that takes mechanics and is based on games like SA1, SA2 and Advance 2.</p>
-        </div>
     </header>
+    <div class="description">
+        <p>Sonic Rising Chaos is a fangame made in Roblox powered by the "Digital Swirl Engine" that takes mechanics and is based on games like SA1, SA2 and Advance 2.</p>
+    </div>
 </body>
 </html>
