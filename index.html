@@ -17,23 +17,25 @@
             flex-direction: column; /* Asegura que el contenido se alinee en columna */
         }
         header {
-            padding: 20px; /* Reducido el padding para hacer el header más delgado */
+            width: 80%; /* Ancho del header del 80% del ancho del cuerpo */
+            margin: auto; /* Centra el header horizontalmente */
+            padding: 20px; /* Padding interno del header */
             background-color: rgba(18, 52, 207, 0.8); /* Fondo semitransparente */
             color: white;
-            flex: 0 0 auto; /* Hace que el header no crezca, manteniendo su tamaño */
             display: flex;
-            justify-content: space-between; /* Alinea elementos en el header */
-            align-items: center; /* Centra verticalmente */
+            flex-direction: column;
+            justify-content: center; /* Centra verticalmente el contenido */
         }
         .logo {
             width: 1000px;
             height: auto;
-            margin-left: 20px; /* Ajusta el margen izquierdo del logo */
+            margin: auto; /* Centra el logo horizontalmente */
         }
         .description {
-            margin-right: 20px; /* Ajusta el margen derecho de la descripción */
+            margin-top: 20px;
             font-size: 18px;
             color: white;
+            text-align: center; /* Alinea el texto al centro */
         }
     </style>
 </head>
