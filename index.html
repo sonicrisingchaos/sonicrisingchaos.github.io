@@ -12,15 +12,23 @@
             padding: 0;
             background: url('Background.png') no-repeat center center fixed;
             background-size: cover;
+            height: 100vh; /* Establece la altura del cuerpo al 100% del viewport */
+            display: flex;
+            flex-direction: column; /* Asegura que el contenido se alinee en columna */
         }
         header {
             padding: 50px;
             background-color: rgba(18, 52, 207, 0.8); /* Fondo semitransparente */
             color: white;
+            flex: 1; /* Hace que el header ocupe todo el espacio disponible */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centra el contenido verticalmente */
         }
         .logo {
             width: 1000px;
             height: auto;
+            margin: auto; /* Centra horizontalmente el logo */
         }
         .description {
             margin-top: 20px;
